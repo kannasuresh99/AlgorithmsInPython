@@ -6,8 +6,7 @@ k = 0
 for x in range(0, len(a)):
     for i in range(0, len(a)):
         if i < (len(a)-2) and a[i] > a[i+1]:
-            b.append(a[i+1])
-            a[i+1] = a[i]
-            a[i] = b[i+k]
-    k = k+1
+            tempVariable = a[i]
+            a[i] = a[i+1]
+            a[i+1] = tempVariable
 print(a)
